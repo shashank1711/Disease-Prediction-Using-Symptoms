@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script>
+      function mySearch() {
+          debugger
+          var strText = document.getElementsByName("symptoms_checkbox").value;
+          document.getElementsByName("symptoms_checkbox").innerHTML = strText;
+        }
+    </script>
+    <style>
+      body {
+        font-family: 'Raleway', sans-serif;
+        padding-bottom: 50px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100%;
+      }
+    </style>
+
+    <title>Disease Predictor Web Application</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="https://ezurs.com/wp-content/themes/ezurs/images/new/icon-PreventableHospitalAdmissions.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        Disease Predictor Web Application
+      </a>
+      <form class="form-inline">
+        <div class="md-form my-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" onclick="mySearch()">
+          <a href="#"></a>
+        </div>
+      </form>
+    </nav>
+    <form action="/" method="POST">
+      <div class="container">
+          <h3 class="text-center mt-3">Disease Predictor</h3>
+          <h4 class="mt-3">Select the Symptoms</h4>
+          
+          <table class="table table-striped mt-4">
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" abdominal_pain" value="43" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" abdominal_pain">Abdominal Pain </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" abnormal_menstruation" value="121" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" abnormal_menstruation">Abdominal Menstruation </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" acidity" value="5" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" acidity">Acidity </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" acute_liver_failure" value="118" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" acute_liver_failure">Acute Liver Failure </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" altered_sensorium" value="61" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" altered_sensorium">Altered Sensorium </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" anxiety" value="48" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" anxiety">Anxiety </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" back_pain" value="16" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" back_pain">Backpain </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" belly_pain" value="116" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" belly_pain">Belly Pain </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" blackheads" value="51" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" blackheads">Black Heads </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" bladder_discomfort" value="32" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" bladder_discomfort">Bladder Discomfort </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" blister" value="54" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" blister">Blister</label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" blood_in_sputum" value="129" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" blood_in_sputum">Blood In Sputum </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" bloody_stool" value="64" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" bloody_stool">Bloody Stool </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" blurred_and_distorted_vision" value="60" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" blurred_and_distorted_vision">Blurred And Distorted Vision </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" breathlessness" value="23" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" breathlessness">Breathleassness </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" brittle_nails" value="107" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" brittle_nails">Brittle Nails </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" bruising" value="46" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" bruising">Bruising </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" burning_micturition" value="31" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" burning_micturition">Burning Micturition </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" chest_pain" value="15" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" chest_pain">Chest Pain </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" chills" value="18" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" chills">Chills </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" cold_hands_and_feets" value="47" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" cold_hands_and_feets">Cold Hands And Feet </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" coma" value="123" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" coma">Coma </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" congestion" value="128" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" congestion">Congestion </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" constipation" value="21" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" constipation">Constipation </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" continuous_feel_of_urine" value="70" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" continuous_feel_of_urine">Continuous Feel Of Urine </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" continuous_sneezing" value="2" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" continuous_sneezing">Continuous Sneezing </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" cough" value="13" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" cough">Cough </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" cramps" value="24" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" cramps">Cramps </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" dark_urine" value="62" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" dark_urine">Dark Urine </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" dehydration" value="38" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" dehydration">Dehydration </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" depression" value="92" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" depression">Depression </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" diarrhoea" value="58" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" diarrhoea">Diarrhoea </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" dischromic_patches" value="55" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" dischromic_patches">Dischromatic Patches </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" distention_of_abdomen" value="80" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" distention_of_abdomen">Distention Of Abdomen </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" dizziness" value="39" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" dizziness">Dizziness </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" drying_and_tingling_lips" value="108" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" drying_and_tingling_lips">Drying And Tingling Lips </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" enlarged_thyroid" value="104" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" enlarged_thyroid">Enlarged Thyroid </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" excessive_hunger" value="78" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" excessive_hunger">Excessive Hunger </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" extra_marital_contacts" value="57" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" extra_marital_contacts">Extra Marital Contacts </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" family_history" value="76" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" family_history">Family History </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" fast_heart_rate" value="98" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" fast_heart_rate">Fast Heart Rate </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" fatigue" value="10" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" fatigue">Fatigue </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" fluid_overload" value="93" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" fluid_overload">Fluid Overload </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" foul_smell_of_urine" value="52" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" foul_smell_of_urine">Foul Smell Of Urine </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" headache" value="14" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" headache">Headache </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" high_fever" value="33" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" high_fever">High Fever </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" hip_joint_pain" value="66" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" hip_joint_pain">Hip Joint Pain </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" history_of_alcohol_consumption" value="88" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" history_of_alcohol_consumption">History Of Alcohol Consumption </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" increased_appetite" value="105" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" increased_appetite">Increased Appetite </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" indigestion" value="7" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" indigestion">Indigestion </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" inflammatory_nails" value="91" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" inflammatory_nails">Inflammatory Nails </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" internal_itching" value="86" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" internal_itching">Internal Itching </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" irregular_sugar_level" value="75" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" irregular_sugar_level">Irregular Sugar Level </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" irritability" value="99" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" irritability">Irritability </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" irritation_in_anus" value="81" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" irritation_in_anus">Irritation In Anus </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" itching" value="0" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" itching">Itching </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" joint_pain" value="19" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" joint_pain">Joint Pain </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" knee_pain" value="49" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" knee_pain">Knee Pain </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" lack_of_concentration" value="77" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" lack_of_concentration">Lack Of Concentration </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" lethargy" value="41" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" lethargy">Lethargy </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" loss_of_appetite" value="36" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" loss_of_appetite">Loss Of Appetite </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" loss_of_balance" value="59" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" loss_of_balance">Loss Of Balance </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" loss_of_smell" value="130" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" loss_of_smell">Loss Of Smell </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" malaise" value="95" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" malaise">Malaise </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" mild_fever" value="101" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" mild_fever">Mild Fever </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" mood_swings" value="26" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" mood_swings">Mood Swings </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" movement_stiffness" value="67" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" movement_stiffness">Movement Stiffness </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" mucoid_sputum" value="87" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" mucoid_sputum">Mucoid Sputum </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" muscle_pain" value="100" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" muscle_pain">Muscle Pain </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" muscle_wasting" value="8" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" muscle_wasting">Muscle Wasting </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" muscle_weakness" value="28" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" muscle_weakness">Muscle Weakness </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" nausea" value="42" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" nausea">Nausea </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" neck_pain" value="27" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" neck_pain">Neck Pain </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" nodal_skin_eruptions" value="34" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" nodal_skin_eruptions">Nodal Skin Eruptions </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" obesity" value="65" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" obesity">Obesity </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" pain_behind_the_eyes" value="110" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" pain_behind_the_eyes">Pain Behind The Eyes </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" pain_during_bowel_movements" value="22" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" pain_during_bowel_movements">Pain During Bowel Movements </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" pain_in_anal_region" value="44" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" pain_in_anal_region">Pain In Anal Region </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" painful_walking" value="83" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" painful_walking">Painful Walking </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" palpitations" value="125" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" palpitations">Palpitations </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" passage_of_gases" value="74" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" passage_of_gases">Passage Of Gases </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" patches_in_throat" value="9" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" patches_in_throat">Patches In Throat </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" phlegm" value="103" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" phlegm">Phlegm </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" polyuria" value="109" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" polyuria">Polyuria </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" prominent_veins_on_calf" value="96" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" prominent_veins_on_calf">Prominent Veins On Calf </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" puffy_face_and_eyes" value="97" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" puffy_face_and_eyes">Puffy Face And Eyes </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" pus_filled_pimples" value="30" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" pus_filled_pimples">Pus Filled Pimples </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" receiving_blood_transfusion" value="117" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" receiving_blood_transfusion">Receiving Blood Transfusion </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" receiving_unsterile_injections" value="122" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" receiving_unsterile_injections">Receiving Unsterile Injections </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" red_sore_around_nose" value="72" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" red_sore_around_nose">Red Sore Around Nose </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" red_spots_over_body" value="115" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" red_spots_over_body">Red Spots Over Body </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" redness_of_eyes" value="119" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" redness_of_eyes">Redness Of Eyes </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" restlessness" value="37" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" restlessness">Restlessness </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" runny_nose" value="127" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" runny_nose">Runny Nose </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" rusty_sputum" value="120" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" rusty_sputum">Rusty Sputum </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" scurring" value="69" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" scurring">Scurring </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" shivering" value="3" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" shivering">shivering </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" silver_like_dusting" value="71" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" silver_like_dusting">Silver Like Dusting </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" sinus_pressure" value="124" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" sinus_pressure">Sinus Pressure </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" skin_peeling" value="53" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" skin_peeling">Skin Peeling </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" skin_rash" value="1" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" skin_rash">Skin Rash </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" slurred_speech" value="114" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" slurred_speech">Slurred Speech </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" small_dents_in_nails" value="84" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" small_dents_in_nails">Small Dents In Nails </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" spinning_movements" value="68" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" spinning_movements">Spinning Movements </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" spotting_urination" value="73" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" spotting_urination">Spotting Urination </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" stiff_neck" value="29" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" stiff_neck">Stiff Neck </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" stomach_bleeding" value="126" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" stomach_bleeding">Stomach Bleeding </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" stomach_pain" value="4" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" stomach_pain">Stomach Pain </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" sunken_eyes" value="12" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" sunken_eyes">Sunken Eyes </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" sweating" value="45" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" sweating">Sweating </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" swelled_lymph_nodes" value="94" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" swelled_lymph_nodes">Swelled Lymph Nodes </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" swelling_joints" value="50" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" swelling_joints">Swelling Joints </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" swelling_of_stomach" value="63" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" swelling_of_stomach">Swelling Of Stomach </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" swollen_blood_vessels" value="89" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" swollen_blood_vessels">Swollen Blood Vessels </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" swollen_extremeties" value="113" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" swollen_extremeties">Swollen Extremities </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" swollen_legs" value="82" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" swollen_legs">Swollen Legs </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" throat_irritation" value="112" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" throat_irritation">Throat Irritation </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" toxic_look_(typhos)" value="111" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" toxic_look_(typhos)">Toxic Look (Typhos) </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" ulcers_on_tongue" value="35" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" ulcers_on_tongue">Ulcers On Tongue </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" unsteadiness" value="90" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" unsteadiness">Unsteadiness </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" visual_disturbances" value="106" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" visual_disturbances">Visual Disturbances </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" vomiting" value="6" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" vomiting">Vomiting </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" watering_from_eyes" value="56" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" watering_from_eyes">Watering From Eyes </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" weakness_in_limbs" value="17" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" weakness_in_limbs">Weakness In Limbs </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" weakness_of_one_body_side" value="40" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" weakness_of_one_body_side">Weakness Of One Side Body </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" weight_gain" value="25" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" weight_gain">Weight Gain </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" weight_loss" value="11" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" weight_loss">Weight Loss </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" yellow_crust_ooze" value="85" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" yellow_crust_ooze">Yellow Crust Ooze </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" yellow_urine" value="102" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" yellow_urine">Yellow Urine </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" yellowing_of_eyes" value="79" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" yellowing_of_eyes">Yellowing Of Eyes </label></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td><input type="checkbox" class="form-check-input" id=" yellowish_skin" value="20" name="symptoms_checkbox"></td>
+                <td><label class="form-check-label" for=" yellowish_skin">Yellowish Skin </label></td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="submit" class="btn btn-primary">Get Diagnosis</button>
+      </div>
+    </form>
+
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

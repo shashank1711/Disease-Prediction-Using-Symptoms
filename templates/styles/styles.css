@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+body {
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 50px;
+    background-image: url("../Images/so-white.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+
+}
+
+tr:hover td { background:#EDEDED; }
+
+.form-check-input:hover {
+    -moz-box-shadow:    3px 3px 5px 2px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 2px #ccc;
+    box-shadow:         3px 3px 5px 2px #ccc;
+}
+
+
+
+.form-check-label {
+    text-align: center;
+}
+
+.form-control mr-sm-2 {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
